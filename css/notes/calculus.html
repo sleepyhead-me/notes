@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subject-wise Notes - Calculus I</title>
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+    <header>
+        <h1>Subject-wise Notes</h1>
+        <h2>Calculus I</h2>
+        <p>Course Code - XXXX</p>
+    </header>
+    <div class="search-container">
+        <input type="text" id="subjectSearch" placeholder="Search Notes..." onkeyup="searchSubjectNotes()">
+        <button>🔍</button>
+    </div>
+    <ul>
+        <li>Chapter 1: Introduction</li>
+        <li>Chapter 2: Limits and Continuity</li>
+        <li>Chapter 3: Differentiation</li>
+        <li>Chapter 4: Integration</li>
+    </ul>
+    <a href="../index.html">Back to Home</a>
+    <script>
+        function searchSubjectNotes() {
+            let query = document.getElementById("subjectSearch").value.toLowerCase();
+            let listItems = document.querySelectorAll("ul li");
+            listItems.forEach(item => {
+                item.style.display = item.textContent.toLowerCase().includes(query) ? "block" : "none";
+            });
+        }
+    </script>
+</body>
+</html>
