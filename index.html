@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Resource Hub</title>
+  <link rel="stylesheet" href="css/styles.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <header>
+        <h1>College Resource Hub</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#notes">Notes</a></li>
+                <li><a href="#routine">Class Routine</a></li>
+                <li><a href="#papers">Previous Papers</a></li>
+                <li><a href="#syllabus">Syllabus</a></li>
+                <li><a href="#resources">Other Resources</a></li>
+                <li><a href="#about">About</a></li>
+            </ul>
+            <div class="search-container">
+                <input type="text" id="globalSearch" placeholder="Search...">
+                <button onclick="performGlobalSearch()">🔍</button>
+            </div>
+        </nav>
+    </header>
+    
+    <section id="notes">
+        <h2>Subject-wise Notes</h2>
+        <ul>
+            <li><a href="notes/calculus.html">Calculus I</a></li>
+            <li><a href="notes/linear-algebra.html">Linear Algebra</a></li>
+            <li><a href="notes/vector-geometry.html">Analytic and Vector Geometry</a></li>
+            <li><a href="notes/physics1.html">Non-major Physics I</a></li>
+            <li><a href="notes/physics2.html">Non-major Physics II</a></li>
+        </ul>
+    </section>
+    
+    <section id="papers">
+        <h2>Previous Year’s Question Papers</h2>
+        <ul>
+            <li><a href="questions/calculus.html">Calculus I</a></li>
+            <li><a href="questions/linear-algebra.html">Linear Algebra</a></li>
+            <li><a href="questions/vector-geometry.html">Analytic and Vector Geometry</a></li>
+            <li><a href="questions/physics1.html">Non-major Physics I</a></li>
+            <li><a href="questions/physics2.html">Non-major Physics II</a></li>
+        </ul>
+    </section>
+    
+    <footer>
+        <p>&copy; 2025 College Resource Hub. All rights reserved.</p>
+    </footer>
+</body>
+</html>
